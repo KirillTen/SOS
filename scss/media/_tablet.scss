@@ -1,0 +1,224 @@
+@include tablet {
+  body {
+    font-size: 16px;
+  }
+
+  .header__menu {
+    justify-content: space-between;
+    padding-inline: 5px;
+    flex-wrap: nowrap;
+    > img {
+      margin: 0;
+    }
+  }
+
+  /* BURGER MENU */
+  .header__burger-menu {
+    display: block;
+    order: 3;
+  }
+
+  .menu-icon {
+    display: block;
+    width: 38px;
+    height: 18px;
+    position: relative;
+    z-index: 5;
+    cursor: pointer;
+    span {
+      display: inline-block;
+      position: absolute;
+      left: 0;
+      top: calc(50% - 1px);
+      width: 100%;
+      height: 2px;
+      background-color: #fff;
+      transition: transform 0.3s ease-in-out;
+      &:first-child {
+        top: 0;
+      }
+      &:last-child {
+        top: auto;
+        bottom: 0;
+      }
+    }
+    &.active {
+      span {
+        background-color: black;
+        transform: scale(0);
+        &:first-child {
+          top: calc(50% - 1px);
+          transform: rotate(45deg);
+        }
+        &:last-child {
+          bottom: calc(50% - 1px);
+          transform: rotate(-45deg);
+        }
+      }
+    }
+  }
+
+  .header__nav {
+    overflow: auto;
+    position: absolute;
+    top: 0px;
+    right: -100%;
+    display: flex;
+    height: 45vh;
+    width: 60vw;
+    background-color: #fff;
+    opacity: 0.9;
+    display: none;
+    transition: 0.2s ease-in-out;
+    &.active {
+      right: 0;
+      max-width: 70vw;
+      display: flex;
+    }
+
+    ul {
+      padding-top: 20px;
+      padding-inline: 5px;
+      row-gap: 10px;
+      max-width: 60%;
+      background-color: #fff;
+      justify-content: start;
+      flex-direction: column;
+      margin: 60px auto;
+
+      a {
+        background-color: var(--color-hover);
+        text-align: center;
+        max-width: 170px;
+        border-radius: 10px;
+        padding: 5px 100px;
+        border: 1px solid black;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        line-height: 30px;
+        color: black;
+        :hover {
+          color: var(--color-white);
+        }
+      }
+    }
+  }
+  .header__logo {
+    order: -1;
+  }
+
+  /* .header__contacts {
+  order: 0;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 4px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border: 1px solid #ffffff;
+  border-radius: 20px;
+
+  a {
+    position: relative;
+    color: #353535;
+    padding: 5px 20px 5px 40px;
+    -webkit-transition: color 0.4s ease;
+    transition: color 0.4s ease;
+    line-height: 1.6;
+    &::before {
+      position: absolute;
+      content: "";
+      background-image: url(/img/icon/tel.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      top: 0;
+      left: 0px;
+      width: 35px;
+      height: 35px;
+    }
+  }
+} */
+  /* BURGER MENU END */
+
+  .title {
+    font-size: calc(var(--font-size-title) - 30px);
+  }
+
+  .subtitle {
+    font-size: calc(var(--font-size-subtitle) - 2px);
+  }
+
+  .header {
+  }
+
+  .header__desc {
+    padding-inline: 5px;
+    .subtitle {
+      padding-right:0;
+    }
+    
+  }
+
+  .social__inner-desc {
+    padding: 10px;
+  }
+
+  .social_slider {
+    padding-top: 5px;
+    padding-left: 1px;
+    width: 440px;
+    height: 640px;
+  }
+
+  .carousel {
+    width: 100%;
+    height: 100%;
+  }
+
+  .special {
+    background-position: -300px 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .special .spacial_container {
+    justify-content: center;
+    align-items: end;
+  }
+
+  .system__grid-container {
+    display: flex;
+    flex-direction: column;
+    background-image: none;
+  }
+
+  .quotes__comment {
+    align-items: center;
+  }
+
+  .box-align-1 {
+    margin-left: auto;
+  }
+
+  .box-align-3 {
+    margin-left: auto;
+  }
+
+  .footer__newsletter {
+    margin-bottom: 150px;
+  }
+
+  .footer__privacy {
+    flex-direction: column-reverse;
+    grid-row: 20px;
+  }
+
+  .footer__nav {
+    ul {
+      gap: 10px;
+    }
+  }
+}

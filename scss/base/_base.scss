@@ -1,0 +1,52 @@
+body {
+  background-color: black;
+  overflow: hidden;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: var(--font-size-main);
+  color: var(--color-light);
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1220px;
+  padding-inline: 10px;
+}
+
+.link {
+  font-weight: var(--font-weight-second);
+  font-size: var(--font-size-small);
+  color: var(--color-light);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.3s ease-in;
+  &:hover {
+    color: var(--color-dark);
+  }
+}
+
+.title {
+  font-family: var(--second-family);
+  font-family: "Bebas Neue", sans-serif;
+  /* font-weight: var(--font-weight-second); */
+  font-size: var(--font-size-title);
+  letter-spacing: 2px;
+}
+
+.subtitle {
+  font-family: var(--second-family);
+  /* font-weight: var(--font-weight-second); */
+  font-size: var(--font-size-subtitle);
+  letter-spacing: 2px;
+}
+
+.section-scroll {
+  height: 100vh; /* Высота секции равна высоте окна */
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.header__burger-menu {
+  display: none;
+}

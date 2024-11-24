@@ -1,0 +1,62 @@
+@include desktop-s {
+
+  .header__menu {
+    flex-wrap: wrap;
+    > img {
+      margin-right: auto;
+    }
+  }
+  .header__select {
+    margin-left: auto;
+  }
+
+  .social__inner {
+    .social__line-span {
+      margin-bottom: 20px;
+      width: 100%;
+    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &-desc {
+      padding: 20px;
+    }
+  }
+
+  .social_slider {
+    padding-top: 10px;
+    padding-left: 10px;
+    width: 512px;
+    height: 610px;
+  }
+
+  .arrow-prev,
+  .arrow-next {
+    top: 50%;
+  }
+
+  .special {
+    background-position: top;
+  }
+
+  form {
+    flex-wrap: wrap;
+    
+  }
+
+  .footer__newsletter {
+    margin-bottom: 130px;
+    gap: 10px;
+    justify-content: space-around;
+  }
+
+  .footer__newsletter-box {
+    max-width: 500px;
+}
+
+.footer__social  {
+    ul{
+    gap: 25px;
+}
+}
+}

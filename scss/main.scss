@@ -1,0 +1,6 @@
+@import "../scss/base/reset", "../scss/base/vars", "../scss/base/base";
+@import "../scss/media/media";
+@import "../scss/blocks/header", "../scss/blocks/social",
+  "../scss/blocks/special", "../scss/blocks/system", "../scss/blocks/quotes",
+  "../scss/blocks/footer";
+@import "../scss/media/desktop-s", "../scss/media/laptop", "../scss/media/tablet", "../scss/media/mobile";

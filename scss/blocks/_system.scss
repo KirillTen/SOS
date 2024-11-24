@@ -1,0 +1,41 @@
+.system {
+    padding-top: 145px;
+    background-image: url(../img/bg-system.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.system__desc {
+    margin-bottom: 133px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.system__grid-container{
+    display: grid;
+    grid-template-columns: 277px 296px;
+    grid-template-rows: 125px 125px 149px;
+    
+background-image: url(/img/icon/system-icon.svg);
+background-repeat: no-repeat;
+background-size: contain;
+max-width: 574px;
+height: 400px;
+
+.system__grid--graphics{
+grid-row: 3/4;
+grid-column: 1/3;
+}
+}
+
+.system__grid--cells{
+    padding: 15px 19px;
+    p{
+        margin-bottom: 6px;
+        font-family: var(--second-family);
+        color: var(--color-second);
+        letter-spacing: 2px;
+        font-size: 24px;
+    }
+}

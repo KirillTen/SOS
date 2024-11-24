@@ -1,0 +1,54 @@
+@include mobile {
+  .header__desc {
+    text-align: center;
+  }
+  .header__scroll-next {
+    left: 39%;
+  }
+
+  .header__link-buy {
+    margin-right: 0;
+  }
+
+  .social_slider {
+    width: 300px;
+    height: 550px;
+  }
+
+  .special__details details summary {
+    font-size: 22px;
+    letter-spacing: 1px;
+  }
+
+  .footer__email {
+    width: 260px;
+  }
+
+  .footer__newsletter {
+    padding: 0;
+    margin-bottom: 0;
+  }
+
+      .footer__menu {
+        margin-top: 20px;
+    }
+
+  .footer__newsletter-box {
+    padding-top: 20px;
+  }
+
+  .footer__nav ul {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer__privacy-desc {
+    text-align: center;
+  }
+
+  .footer__privacy span {
+    margin-top: 10px;
+    text-align: center;
+}
+}

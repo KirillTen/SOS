@@ -1,0 +1,153 @@
+.social {
+  position: relative;
+  background: url(../img/bg-social.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #0f0f0f;
+    opacity: 0.9;
+  }
+}
+
+.social__inner {
+  display: grid;
+  grid-template-columns: 551px 621px;
+  gap: 28px;
+  position: relative;
+  z-index: 1;
+}
+
+.social__inner-desc {
+  padding-top: 255px;
+  display: flex;
+  flex-direction: column;
+
+  .title {
+    margin-bottom: 9px;
+    line-height: 1;
+  }
+  .subtitle {
+    margin-bottom: 9px;
+  }
+
+  .social__line-span {
+    margin-bottom: 60px;
+    height: 3px;
+    width: 550px;
+    display: inline-block;
+    background-color: var(--color-light);
+  }
+  p {
+    max-width: 365px;
+    max-height: 174px;
+    text-align: justify;
+    line-height: 1.2;
+    align-self: flex-end;
+  }
+
+  .social__border-bottom-text {
+    text-decoration: underline;
+    text-decoration-color: var(--color-second);
+    text-decoration-thickness: 6px;
+    text-underline-offset: 1px;
+  }
+}
+
+.social_slider {
+  position: relative;
+  padding-top: 202px;
+  padding-left: 10px;
+  width: 512px;
+  height: 610px;
+}
+.carousel {
+  width: 503px;
+  height: 610px;
+  perspective: 1000px;
+  position: relative;
+  overflow: hidden;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    object-position: top;
+  }
+}
+
+.carousel-inner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+.carousel-item {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border: 2px solid #333;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+
+.carousel-item:nth-child(1) {
+  transform: rotateY(0deg);
+}
+.carousel-item:nth-child(2) {
+  transform: rotateY(120deg);
+}
+.carousel-item:nth-child(3) {
+  transform: rotateY(240deg);
+}
+
+.controls {
+ 
+  margin-top: 20px;
+}
+
+.arrow {
+  cursor: pointer;
+  font-size: 24px;
+  padding: 10px;
+}
+
+.arrow-prev {
+  position: absolute;
+  top: 75%;
+  left: 5%;
+}
+
+.arrow-next {
+position: absolute;
+  top: 75%;
+  right: 3%;
+}
+
+.scrollbar {
+  width: 100%;
+  height: 10px;
+  background: var(--color-light);
+  position: relative;
+  margin-top: 20px;
+  margin-inline: auto;
+}
+
+.scroll-thumb {
+  width: 33.33%; /* 100% / количество слайдов */
+  height: 100%;
+  background: var(--color-dark);
+  position: absolute;
+  transition: left 1s;
+  left: 0;
+}
